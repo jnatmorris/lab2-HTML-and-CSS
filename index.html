@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>About Me Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <script src="http://jigsaw.w3.org/css-validator/images/vcss"></script>
+    <script src="http://jigsaw.w3.org/css-validator/check/referer"></script>
+
+
+
+    <style>
+        .noShowBullet {
+            list-style-type: none;
+        }
+
+        a {
+            text-decoration: none;
+
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        #validator {
+            display: flex;
+
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        h3 {
+            margin-top: 4vh;
+            margin-bottom: 1vh;
+        }
+
+        .photoBy {
+            color: beige
+        }
+
+        #about {
+            text-align: center;
+            margin-top: 1vh;
+            margin-bottom: 10vh;
+        }
+
+        #pageHeader {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 80px;
+            text-decoration: underline 2px;
+            text-underline-offset: 5px;
+            text-align: center;
+            margin-bottom: 0vh;
+        }
+
+        footer {
+            margin-top: 5vh;
+        }
+
+        body {
+            margin-left: 7vw;
+            margin-right: 7vw;
+            margin-top: 4vh;
+            margin-bottom: 4vh;
+            overflow-x: hidden;
+            background-color: rgb(17 24 39);
+
+        }
+
+        a {
+
+            color: rgb(59 130 246);
+        }
+
+        p::first-letter {
+
+            font-size: 150%;
+        }
+
+        p,
+        ol,
+        ul,
+        h1,
+        h3 {
+            color: white
+        }
+
+        .listHeader {
+
+            color: wheat;
+            margin-right: 1.5px;
+        }
+
+        #imdbLink {
+            color: coral;
+        }
+
+        #linkAndPar {
+            margin-left: 6px;
+        }
+
+        #smallWidth {
+            width: 70%;
+        }
+
+        #inverseOrder {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+
+        .bold {
+            font-weight: 700;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <h1 id="pageHeader">Justin Morris</h1>
+
+    <p id="about"><span class="bold">Computer science</span> student studying in <span class="bold">Germany</span> from
+        the <span class="bold">United States</span>. I enjoy
+        being with friends as
+        well as
+        <span class="bold">building web applications.</span>
+    </p>
+
+
+    <h3>University Classes I've Taken</h3>
+    <ul>
+        <li>Machine Learning</li>
+        <li>Writing a thesis on web-based service for training data generation in trajectory-based molecular machine
+            learning</li>
+        <li>Web Application Development</li>
+    </ul>
+
+    <h3>Favorite Books/Movie</h3>
+    <ol id="inverseOrder">
+        <li>Dunkirk <span id="linkAndPar">(<a id="imdbLink"
+                    href="https://www.imdb.com/title/tt5013056/">imdb</a>)</span>
+            <ul class="noShowBullet">
+                <!--  -->
+                <li class="listHeader">Director</li>
+                <li>
+                    <ul class="noShowBullet">
+                        <li>Christopher Nolan</li>
+                    </ul>
+                </li>
+                <!--  -->
+                <li class="listHeader">
+                    Genres
+                </li>
+                <li>
+                    <ul class="noShowBullet">
+                        <li>Drama, History, Action</li>
+                    </ul>
+                </li>
+
+                <!--  -->
+                <li class="listHeader">
+                    Stars
+                </li>
+                <li>
+                    <ul class="noShowBullet">
+                        <li>Fionn Whitehead, Barry Keoghan, Mark Rylance</li>
+                    </ul>
+                </li>
+
+                <!--  -->
+                <li class="listHeader">
+                    Plot Description
+                </li>
+                <li>
+                    <ul class="noShowBullet">
+                        <li id="smallWidth">"Allied soldiers from Belgium, the British Commonwealth and Empire, and
+                            France
+                            are
+                            surrounded by the
+                            German Army and
+                            evacuated during a fierce battle in World War II."</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="https://en.wikipedia.org/wiki/Sum:_Forty_Tales_from_the_Afterlives">Sum: Forty Tales from the
+                Afterlives
+            </a>
+        </li>
+        <li>The Catcher in the Rye</li>
+    </ol>
+
+    <h3>My moods</h3>
+    <div class="grid">
+        <div>
+            <img src="./static/img/happyDog.jpg" loading="eager" alt="Image that exhibits a happy mood" width="250"
+                height="200">
+            <p class="photoBy">Photo by Marliese Streefland on Unsplash</p>
+        </div>
+        <div>
+            <img src="./static/img/sadDog.jpg" loading="eager" alt="Image that exhibits a sad mood" width="300"
+                height="200">
+            <p class="photoBy">Photo by fatty corgi on Unsplash</p>
+        </div>
+    </div>
+
+
+
+    <h3>Something interesting about classmates</h3>
+    <ul>
+        <li>Tom: He is able to speak 4 languages at a near native level.</li>
+        <li>John: John is able to read books upside down and comprehend just as well as if he read it right side up.
+        </li>
+        <li>Sarah: Sarah is able to fall asleep anywhere, regardless of light levels.</li>
+    </ul>
+
+    <footer>
+        <hr>
+        <div id="validator">
+            <p>
+                <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                    <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss"
+                        alt="Valid CSS!">
+                </a>
+            </p>
+            <p>
+                <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                    <img style="border:0;width:88px;height:31px"
+                        src="http://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Valid CSS!">
+                </a>
+            </p>
+        </div>
+        <p>
+            Last updated 28/02/2023 by Justin Morris
+        </p>
+    </footer>
+
+</body>
+
+</html>
